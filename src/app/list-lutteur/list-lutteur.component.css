@@ -1,0 +1,48 @@
+
+.cadre {
+    border: 1px solid #000;
+    padding: 15px;
+    margin: 15px;
+  }
+  
+  .etat {
+    padding: 1px;
+  }
+  
+  .realise {
+    background-color: green;
+    color: white;
+    border-radius: 1px;
+  }
+  
+  .nonRealise {
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+  }
+  .button-container {
+    margin-top: 10px; 
+  }
+  .cadre {
+    display: flex;
+    flex-wrap: wrap; /* Les éléments passent à la ligne si l'espace est insuffisant */
+    gap: 20px; /* Espacement entre les éléments */
+  }
+  .edit-delete-actions button {
+    border-radius: 8px;
+    width: 70px;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    margin-right: 10px; /* Espacement entre les boutons */
+  }
+  
+  .edit-delete-actions {
+    padding-top: 15px;
+    width: 70%;
+    display: flex; /* Assure que les boutons respectent la mise en ligne */
+    justify-content: flex-start; /* Alignement des boutons à gauche */
+  }
+  
+ 
+  

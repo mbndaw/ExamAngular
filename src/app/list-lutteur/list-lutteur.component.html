@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="cadre">
+    @for (lutteur of lutteur; track $index) {
+      <div class="cadre">
+          <h1>{{lutteur.nom}}</h1>
+          <p>{{lutteur.age}}</p>
+          <p>{{lutteur.poids}}</p>
+          <p>{{lutteur.taille}}</p>
+          <p>{{lutteur.image}}</p>
+         
+         
+          <div class="d-flex justify-content-between edit-delete-actions">
+            <button (click)="modifierlutteur(lutteur)" [routerLink]="['modifier']">
+              Modifier
+            </button>
+            <button (click)="supprimerlutteur(lutteur)">
+              Supprimer
+            </button>
+        
+        </div>
+  
+      </div>
+    }
+  
+  </div>
+      
+</body>
+</html>
